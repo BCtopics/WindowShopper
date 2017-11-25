@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B38FFB51FC9163C00B21713 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B38FFB41FC9163C00B21713 /* MainViewController.swift */; };
 		6BBE5FFC1FC91517008B0176 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBE5FFB1FC91517008B0176 /* AppDelegate.swift */; };
 		6BBE60011FC91517008B0176 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BBE5FFF1FC91517008B0176 /* Main.storyboard */; };
 		6BBE60031FC91517008B0176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BBE60021FC91517008B0176 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B38FFB41FC9163C00B21713 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6BBE5FF81FC91517008B0176 /* Window-Shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Window-Shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BBE5FFB1FC91517008B0176 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BBE60001FC91517008B0176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,6 +35,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B38FFB11FC9160000B21713 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6B38FFB41FC9163C00B21713 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6B38FFB21FC9160C00B21713 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6B38FFB31FC9161000B21713 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
 		6BBE5FEF1FC91517008B0176 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +77,9 @@
 			isa = PBXGroup;
 			children = (
 				6BBE5FFB1FC91517008B0176 /* AppDelegate.swift */,
+				6B38FFB31FC9161000B21713 /* ModelControllers */,
+				6B38FFB21FC9160C00B21713 /* Models */,
+				6B38FFB11FC9160000B21713 /* ViewControllers */,
 				6BBE600D1FC9155E008B0176 /* Resources */,
 			);
 			path = "Window-Shopper";
@@ -150,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BBE5FFC1FC91517008B0176 /* AppDelegate.swift in Sources */,
+				6B38FFB51FC9163C00B21713 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
