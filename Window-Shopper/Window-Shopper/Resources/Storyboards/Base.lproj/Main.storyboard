@@ -28,9 +28,20 @@
                                     <constraint firstAttribute="width" constant="60" id="rdX-Xa-tUE"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tDN-JG-PQc" customClass="CurrencyTextField" customModule="Window_Shopper" customModuleProvider="target">
-                                <rect key="frame" x="58" y="142" width="258" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your Hourly Wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tDN-JG-PQc" customClass="CurrencyTextField" customModule="Window_Shopper" customModuleProvider="target">
+                                <rect key="frame" x="20" y="150" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1St-ZH-RSn"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F7e-No-XLW" customClass="CurrencyTextField" customModule="Window_Shopper" customModuleProvider="target">
+                                <rect key="frame" x="20" y="215" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Mr5-r5-jOj"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -38,11 +49,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="F7e-No-XLW" firstAttribute="trailing" secondItem="tDN-JG-PQc" secondAttribute="trailing" id="5Io-tY-vaw"/>
                             <constraint firstItem="JKS-xb-gbZ" firstAttribute="trailing" secondItem="vp0-ic-Y3f" secondAttribute="trailing" id="88q-1m-A3h"/>
+                            <constraint firstItem="F7e-No-XLW" firstAttribute="top" secondItem="tDN-JG-PQc" secondAttribute="bottom" constant="25" id="Hfk-Fd-emh"/>
                             <constraint firstItem="c8a-CC-iap" firstAttribute="centerX" secondItem="9t2-9X-KUY" secondAttribute="centerX" id="JG7-bx-E2u"/>
                             <constraint firstItem="JKS-xb-gbZ" firstAttribute="bottom" secondItem="vp0-ic-Y3f" secondAttribute="bottom" id="KiJ-sw-0zK"/>
+                            <constraint firstItem="tDN-JG-PQc" firstAttribute="top" secondItem="c8a-CC-iap" secondAttribute="bottom" constant="35" id="OvT-ln-bxG"/>
+                            <constraint firstItem="F7e-No-XLW" firstAttribute="leading" secondItem="tDN-JG-PQc" secondAttribute="leading" id="ZnU-Rp-0Zh"/>
                             <constraint firstItem="c8a-CC-iap" firstAttribute="top" secondItem="vp0-ic-Y3f" secondAttribute="top" constant="35" id="niB-ob-xlm"/>
                             <constraint firstItem="JKS-xb-gbZ" firstAttribute="top" secondItem="9t2-9X-KUY" secondAttribute="top" id="pgf-6w-v5x"/>
+                            <constraint firstItem="F7e-No-XLW" firstAttribute="height" secondItem="tDN-JG-PQc" secondAttribute="height" id="v5E-0C-MH5"/>
+                            <constraint firstItem="tDN-JG-PQc" firstAttribute="leading" secondItem="vp0-ic-Y3f" secondAttribute="leading" constant="20" id="vsu-PW-rCe"/>
+                            <constraint firstItem="vp0-ic-Y3f" firstAttribute="trailing" secondItem="tDN-JG-PQc" secondAttribute="trailing" constant="20" id="wgN-yo-cvK"/>
                             <constraint firstItem="JKS-xb-gbZ" firstAttribute="leading" secondItem="vp0-ic-Y3f" secondAttribute="leading" id="xnT-0W-v8P"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vp0-ic-Y3f"/>
