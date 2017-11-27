@@ -16,6 +16,8 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         createButtons()
+        resultLabel.isHidden = true
+        hoursLabel.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,6 +28,18 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var hourlyWageTextField: CurrencyTextField!
     @IBOutlet weak var itemPriceTextField: CurrencyTextField!
+    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var hoursLabel: UILabel!
+    
+    //MARK: - IBActions
+    
+    @IBAction func clearCalculatorButtonTapped(_ sender: Any) {
+        resultLabel.isHidden = true
+        hoursLabel.isHidden = true
+        
+        hourlyWageTextField.text = ""
+        itemPriceTextField.text = ""
+    }
     
     //MARK: - ViewSetup
     
@@ -44,7 +58,14 @@ class MainViewController: UIViewController {
     //MARK: - Calculations
     
     @objc func calculate() {
-        
+        if let hourlyWageTextField = hourlyWageTextField.text, let itemPriceTextField = itemPriceTextField.text {
+            if let wage = Double(hourlyWageTextField), let price = Double(itemPriceTextField) {
+                view.endEditing(true)
+                resultLabel.isHidden = false
+                hoursLabel.isHidden = false
+                resultLabel.text = "\(Wage.getHours(forWage: wage, andPrice: price))"
+            }
+        }
     }
     
     
