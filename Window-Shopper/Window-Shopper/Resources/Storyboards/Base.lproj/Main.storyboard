@@ -35,7 +35,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F7e-No-XLW" customClass="CurrencyTextField" customModule="Window_Shopper" customModuleProvider="target">
                                 <rect key="frame" x="20" y="215" width="335" height="40"/>
@@ -44,7 +44,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -65,6 +65,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vp0-ic-Y3f"/>
                     </view>
+                    <connections>
+                        <outlet property="hourlyWageTextField" destination="tDN-JG-PQc" id="bIF-j9-Kko"/>
+                        <outlet property="itemPriceTextField" destination="F7e-No-XLW" id="2PE-og-liz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OWf-Pu-A9C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
