@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T4e-Og-dAo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="Hrp-r7-POH">
             <objects>
-                <viewController id="T4e-Og-dAo" sceneMemberID="viewController">
+                <viewController id="T4e-Og-dAo" customClass="MainViewController" customModule="Window_Shopper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9t2-9X-KUY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,15 +21,27 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperBG" translatesAutoresizingMaskIntoConstraints="NO" id="JKS-xb-gbZ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="windowShopperIcon" translatesAutoresizingMaskIntoConstraints="NO" id="c8a-CC-iap">
-                                <rect key="frame" x="138" y="59" width="99" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperIcon" translatesAutoresizingMaskIntoConstraints="NO" id="c8a-CC-iap">
+                                <rect key="frame" x="157.5" y="55" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="iFh-GQ-G9A"/>
+                                    <constraint firstAttribute="width" constant="60" id="rdX-Xa-tUE"/>
+                                </constraints>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tDN-JG-PQc" customClass="CurrencyTextField" customModule="Window_Shopper" customModuleProvider="target">
+                                <rect key="frame" x="58" y="142" width="258" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="JKS-xb-gbZ" firstAttribute="trailing" secondItem="vp0-ic-Y3f" secondAttribute="trailing" id="88q-1m-A3h"/>
+                            <constraint firstItem="c8a-CC-iap" firstAttribute="centerX" secondItem="9t2-9X-KUY" secondAttribute="centerX" id="JG7-bx-E2u"/>
                             <constraint firstItem="JKS-xb-gbZ" firstAttribute="bottom" secondItem="vp0-ic-Y3f" secondAttribute="bottom" id="KiJ-sw-0zK"/>
+                            <constraint firstItem="c8a-CC-iap" firstAttribute="top" secondItem="vp0-ic-Y3f" secondAttribute="top" constant="35" id="niB-ob-xlm"/>
                             <constraint firstItem="JKS-xb-gbZ" firstAttribute="top" secondItem="9t2-9X-KUY" secondAttribute="top" id="pgf-6w-v5x"/>
                             <constraint firstItem="JKS-xb-gbZ" firstAttribute="leading" secondItem="vp0-ic-Y3f" secondAttribute="leading" id="xnT-0W-v8P"/>
                         </constraints>
